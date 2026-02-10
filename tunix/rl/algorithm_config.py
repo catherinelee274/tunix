@@ -36,8 +36,9 @@ class AlgorithmConfig:
         "gspo-token",
         "ppo",
         "dapo",
+        "maxrl",
     ]
-    valid_advantage_estimators = ["grpo", "gae"]
+    valid_advantage_estimators = ["grpo", "gae", "maxrl"]
     valid_policy_loss_fns = ["grpo", "ppo"]
     if self.algo_variant not in valid_algo_variants:
       raise ValueError(
